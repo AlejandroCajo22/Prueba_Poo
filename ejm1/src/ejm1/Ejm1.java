@@ -42,7 +42,7 @@ public class Ejm1 {
        String respuesta="s";
        while(respuesta.equals("s"))
        {
-        System.out.println("Ingrese la placa");
+        System.out.println("Ingrese las placas");
         String placa1 = sc.nextLine();
         System.out.println("Ingrese la marca");
         String marca1 = sc.nextLine();
