@@ -4,8 +4,6 @@
  */
 package ejm1;
 
-import java.util.Scanner;
-
 /**
  *
  * @author UCLAB300
@@ -38,33 +36,15 @@ public class Ejm1 {
         c2.setMarca("BMV");
         c2.setColor("AZUL");*/
        CarroControlador controla = new CarroControlador(); 
-       Scanner sc = new Scanner(System.in);
-       String respuesta="s";
-       while(respuesta.equals("s"))
-       {
-        System.out.println("Ingrese las placas");
-        String placa1 = sc.nextLine();
-        System.out.println("Ingrese la marca");
-        String marca1 = sc.nextLine();
-        System.out.println("Ingrese el color");
-        String color1 = sc.nextLine();
+      
         
         Carro c = new Carro();
-        c.setPlaca(placa1);
-        c.setMarca(marca1);
-        c.setColor(color1);
+        c.setPlaca("Mk415");
+        c.setMarca("Mazda");
+        c.setColor("Negro");
         controla.agregarCarros(c);
-        
-           System.out.println("Desea ingresar otro carro: s/n");
-           String aux = sc.nextLine();
-           if(!aux.equals("s")){
-               respuesta="n";
-           }
-       }
-        
-        
-        //controla.agregarCarros(c2);
         controla.listarCarros();
+       
         
         
     }
